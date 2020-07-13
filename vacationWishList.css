@@ -1,0 +1,35 @@
+/* .titlePara {
+  text-align: center;
+  background-color: bisque;
+  height: 200px;
+  width: 100vw;
+} */
+
+#lead {
+  font-size: large;
+  font-family: cursive;
+}
+/* #description {
+  height: 70px;
+} */
+/* .form-inputBoxes-submit {
+  margin-left: 50px;
+  margin-top: 20px;
+} */
+#btn {
+  margin-top: 30px;
+  width: 100%;
+}
+
+#title {
+  text-align: center;
+}
+#destination-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.buttons_container {
+  display: flex;
+  justify-content: space-between;
+}

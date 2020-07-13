@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Destination WishList</title>
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="vacationWishList.css" />
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1 id="display-4">Vacation Destination WishList</h1>
+        <p id="lead">
+          Want to have a blast this summer? Find your dream vacation places and
+          put them into your wishlist. <br />Your dream starts here....
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <form class="form-inputBoxes-submit" id="form-submit">
+            <div class="form-group">
+              <label for="name">Destination Name</label><br />
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                placeholder="What is the name of the destination?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label><br />
+              <input
+                class="form-control"
+                type="text"
+                id="location"
+                placeholder="Where is it?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="photo">Photo</label><br />
+              <input
+                class="form-control"
+                type="url"
+                id="photo"
+                placeholder="Enter a photo url"
+              />
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label><br />
+              <textarea
+                class="form-control"
+                type="text"
+                id="description"
+                placeholder="Tell us something about this place"
+              ></textarea>
+            </div>
+            <button type="submit" id="btn" class="btn btn-primary submit_btn">
+              Add to WishList
+            </button>
+          </form>
+        </div>
+
+        <div class="col-md-8">
+          <h4 id="title">List your dream destinations here</h4>
+          <div id="destination-container">
+            <!-- cards will be generatd by Javascript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="vacationWishList.js"></script>
+  </body>
+</html>
